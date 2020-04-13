@@ -1,0 +1,129 @@
+body {
+    background-color: #674bb1;
+    background-image: url(https://i.ibb.co/WFqfqcg/bg-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Left Side */
+.left-side {
+    display: flex;
+    flex-direction: column; 
+    width: 800px;
+}
+
+#huddle {
+    width: 200px;
+    align-self: flex-start; 
+}
+
+#illustration {
+   width: 100%;
+}
+
+/*Right Side*/
+
+.right-side {
+   display: flex;
+   flex-direction: column;
+   width: 800px;
+}
+
+#headline {
+    font-weight: 700;
+    font-size: 50px;
+}
+
+#subtitle {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+button {
+    color: #a04eca;
+    background-color: white;
+    width: 200px;
+    height: 60px;
+    border: 0px;
+    border-radius: 50px;
+    font-size: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2)
+    
+}
+
+.social-icons {
+    margin: 50px;
+    color: white;
+    text-align: center;
+    align-self: flex-end;
+    justify-
+}
+
+@media (max-width: 375px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+
+    .left-side {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .right-side {
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+    }
+
+    button {
+        width: 230px;
+        height: 50px;
+        margin: 0 auto;
+        font-size: 15px;
+    }
+
+    #headline {
+        text-align: center;
+        font-size: 25px;
+        margin-top: 30px;
+    }
+
+    #subtitle {
+        font-size: 18px;
+        text-align: center;
+        line-height: 30px;
+    }
+
+    #illustration {
+        width: 300px;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+
+    #huddle {
+        margin: 0 auto;
+        margin-top: 15px;
+    }
+
+    .social-icons {
+        margin: 0 auto;
+        position: inherit;
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+}
