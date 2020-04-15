@@ -12,35 +12,43 @@ body {
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
+    height: 100vh;
 }
 
 /* Left Side */
 .left-side {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
+    box-sizing: border-box;
     width: 800px;
 }
 
 #huddle {
-    width: 200px;
-    align-self: flex-start; 
+    width: 250px;
+    margin: 50px 0px auto 0px;
 }
 
 #illustration {
-   width: 100%;
+   width: 100%; 
+   margin-bottom: auto;
 }
+
+
 
 /*Right Side*/
 
 .right-side {
    display: flex;
    flex-direction: column;
-   width: 800px;
+   box-sizing: border-box;
+   width: 700px;
 }
 
 #headline {
     font-weight: 700;
     font-size: 50px;
+    margin-top: auto;
+    margin-bottom: 0px;
 }
 
 #subtitle {
@@ -65,36 +73,22 @@ button {
     margin: 50px;
     color: white;
     text-align: center;
-    align-self: flex-end;
-    justify-
+    margin-left: auto;
+    margin-top: auto;
 }
 
+/* Media Query */
+
 @media (max-width: 375px) {
-    .container {
-        display: flex;
-        flex-direction: column;
-        width: 80%;
-        margin: 0 auto;
-        justify-content: center;
-        box-sizing: border-box;
+
+    #huddle {
+        width: 150px;
+        margin-top: 15px;
     }
 
-    .left-side {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .right-side {
-        display: flex;
-        flex-direction: column;
-        margin: 0px;
-    }
-
-    button {
-        width: 230px;
-        height: 50px;
-        margin: 0 auto;
-        font-size: 15px;
+    #illustration {
+        width: 300px;
+        align-self: center;
     }
 
     #headline {
@@ -108,22 +102,17 @@ button {
         text-align: center;
         line-height: 30px;
     }
-
-    #illustration {
-        width: 300px;
+    
+    button {
+        width: 230px;
+        height: 50px;
         margin: 0 auto;
-        margin-top: 50px;
-    }
-
-    #huddle {
-        margin: 0 auto;
-        margin-top: 15px;
+        font-size: 15px;
     }
 
     .social-icons {
-        margin: 0 auto;
-        position: inherit;
-        margin-top: 20px;
-        margin-bottom: 0px;
+        align-self: center;
+        margin: auto;
+        font-size: .8em;
     }
 }
